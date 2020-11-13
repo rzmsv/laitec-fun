@@ -1,0 +1,137 @@
+claerfix{
+     float: none;
+     clear: both;
+    }
+ header{
+     border-top: 5px solid #8D2210 !important;
+     height: 40px;
+     background-color: #282828;
+ }
+ .nav{
+     height:40px;
+     width: 1024px;
+     background-color:#282828;
+     margin: auto;
+ }
+ 
+ .nav ul{
+     display: inline-block;
+     margin-left: 20px;
+     margin-top: 5px;
+ }
+ .nav ul li{
+     display: inline-block;
+     height: 40px;
+ }
+ .nav ul li a{
+     text-decoration: none;
+     display: inline-block;
+     margin: 10px 10px 10px 10px;
+     color: #7D8B99;
+     font-family: "fun";
+ }
+ .nav ul li a:hover{
+     color: #E2D69F;
+     transition: all 0.5s ease;
+ }
+ .nav h1{
+     display: inline-block;
+     position: relative;
+     font-size: 25px;
+     font-weight: bold;
+     left:260px;
+     bottom: -80px;
+     color: wheat;
+     font-family: "fun";
+ }
+ #nav-logo{
+     float: right;
+     margin: 10px 15px;
+ }
+ @media only screen and (max-width: 768px) {
+     header{
+          height: 40px;
+          width: 768px;
+          background-color: #282828;
+      }
+      .nav{
+          height:40px;
+          width: 768px;
+          border-left:solid 1px #B7B7B7;
+          background-color:#282828;
+          margin: auto;
+      }
+      
+      .nav ul{
+          display: inline-block;
+          margin-left: 30px;
+      }
+      .nav ul li{
+          display: inline-block;
+          height: 40px;
+      }
+      .nav ul li a{
+          text-decoration: none;
+          display: inline-block;
+          margin: 10px 5px 10px 5px;
+          color: #7D8B99;
+          font-family: "fun";
+      }
+      .nav h1{
+          display: inline-block;
+          position: relative;
+          font-size: 25px;
+          font-weight: bold;
+          left:115px;
+          bottom: -80px;
+          color: wheat;
+      }
+      #nav-logo{
+          float: right;
+          margin: 10px 20px 10px 0;
+      }
+ }
+ @media only screen and (max-width:425px) {
+     header{
+          height: 30px;
+          width: 425px;
+          background-color: #282828;
+      }
+      .nav{
+          height:30px;
+          width: 425px;
+          border-left:solid 1px #B7B7B7;
+          background-color:#282828;
+          margin: auto;
+      }
+      
+      .nav ul{
+          display: inline-block;
+          margin-left: 5px;
+      }
+      .nav ul li{
+          display: inline-block;
+          height: 30px;
+      }
+      .nav ul li a{
+          text-decoration: none;
+          display: inline-block;
+          margin: 5px 5px 5px 5px;
+          color: #7D8B99;
+          font-size: 15px;
+          font-family: "fun";
+      }
+      .nav h1{
+          display: inline-block;
+          position: relative;
+          font-size: 15px;
+          font-weight: bold;
+          left:20px;
+          bottom: -60px;
+          color: wheat;
+      }
+      #nav-logo{
+          float: right;
+          margin: 5px;
+      }
+ }

@@ -1,0 +1,44 @@
+
+body{
+    background-color: white;
+}
+.container{
+    width: 1024px;
+    height: 750px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+.container h1{
+    color: #8D2210;
+    font-family: "fun";
+    font-size: 150px;
+    margin-left: 370px;
+    margin-bottom: -50px;
+}
+.container img{
+    margin-left: 150px;
+    height: 500px;
+    width: 700px;
+}
+.container a{
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 2px #8D2210;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    bottom: 100px;
+    left: 390px;
+    font-family: "fun";
+}
+@media screen and (max-width: 425px) {
+    .container{
+        height:750px;
+    }
+    .container h1{
+        margin-bottom: -83px;
+    }
+  }

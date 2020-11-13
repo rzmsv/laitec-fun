@@ -1,0 +1,9 @@
+extend layoutes/mainlayoute.pug
+block style
+block body
+    form(action="/signup" method="post")
+        label(for="title") Title
+        input(type="text" name="title" placeholder="title")
+        button send
+block footer
+    

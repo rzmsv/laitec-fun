@@ -1,0 +1,469 @@
+/* Most Discounts*/
+claerfix{
+     float: none;
+     clear: both;
+ }
+ body{
+     background-color: #F5F5F5;
+ }
+.category1{
+    background-color: rgb(245, 39, 66);
+    margin: auto;
+    height: 100px;
+    border-radius: 0 0 50% 50%;
+}
+.category2{
+    width: 1024px;
+    margin: auto;
+    position: relative;
+}
+.category2 h1{
+    color: wheat;
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    left: 390px;
+    top: 30px;
+    display: inline-block;
+    font-family: "fun";
+}
+#most-discounts{
+     width: 1024px;
+     height: 450px;
+     background-color: gainsboro;
+     margin: auto;
+     margin-bottom: 50px;
+     margin-top: 50px;
+     border-radius: 5px;
+ }
+ #most-discounts h1{
+     position: relative;
+     left: 370px;
+     top: -35px;
+     display: inline-block;
+     font-size: 25px;
+     padding: 20px 35px;
+     border-radius: 50px;
+     background-color:#f7c32b;
+     font-family: 'fun';
+ }
+ #most-discounts ul{
+     margin: auto;
+ }
+ #most-discounts ul a li{
+     position: relative;
+     display: inline-block;
+     background-color: white;
+     width: 210px;
+     height: 300px;
+     margin: 20px;
+     box-sizing: border-box;
+     border-radius: 5px 5px 0 0;
+ }
+ #most-discounts ul a li img{
+     width: 210px;
+     height: 200px;
+     border-radius: 5px 5px 0 0
+ }
+ /*Discounts */
+ #discounts{
+     width: 1024px;
+     height: 780px;
+     background-color: gainsboro;
+     margin: auto;
+     margin-bottom: 50px;
+     margin-top: 50px;
+     border-radius: 5px;
+ }
+ #discounts h1{
+     position: relative;
+     left: 360px;
+     top: -35px;
+     display: inline-block;
+     font-size: 25px;
+     padding: 20px 35px;
+     border-radius: 50px;
+     background-color: #f7c32b;
+     font-family: 'fun';
+ }
+ #discounts ul{
+     margin: auto;
+ }
+ #discounts ul a li{
+     position: relative;
+     display: inline-block;
+     background-color: white;
+     width: 210px;
+     height: 300px;
+     margin: 20px;
+     box-sizing: border-box;
+     border-radius: 5px 5px 0 0;
+ }
+ #discounts ul a li img{
+     width: 210px;
+     height: 200px;
+     border-radius: 5px 5px 0 0
+ }
+ #offers-in-pop{
+     display: inline-block;
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     padding: 5px 15px 0 15px;
+     background-color: rgb(255, 0, 98);
+     border-radius: 20px;
+     color: white;
+     font-size: 20px;
+     font-family:"fun";
+ }
+ .list{
+     position: relative;
+ }
+ .list:hover{
+     -webkit-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     -moz-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     border-radius: 5px 5px 0 0;
+ }
+ .list h2{
+     float: right;
+     margin: 10px 10px 0 0;
+     color: black;
+     font-family: 'fun';
+ }
+ .fa-map-marker{
+     position: absolute;
+     right: 10px;
+     top: 250px;
+     color: rgb(0, 140, 255);
+     color: rgb(2, 146, 190);
+ }
+ .list strong{
+     position: absolute;
+     right: 25px;
+     top: 250px;
+     color: #282828;
+     font-family:"fun";
+ }
+ .fa-eye{
+     position: absolute;
+     right: 5px;
+     top: 275px;
+     color: rgb(2, 146, 190);
+ }
+ .list p{
+     position: absolute;
+     right: 25px;
+     top: 275px;
+     color: #282828;
+     font-family:"fun";
+ }
+ @media only screen and (max-width: 768px) {
+    .category1{
+        width: 768px;
+        background-color: rgb(245, 39, 66);
+        height: 100px;
+        border-radius: 0 0 50% 50%;
+    }
+    .category2{
+        width: 768px;
+        margin: auto;
+        position: relative;
+    }
+    .category2 h1{
+        color: wheat;
+        position: absolute;
+        font-weight: bold;
+        font-size: 25px;
+        left: 275px;
+        top: 30px;
+        display: inline-block;
+        font-family: "fun";
+    }
+    /* Most DISCOUNT */
+    #most-discounts{
+     width: 740px;
+     height: 950px;
+     background-color: gainsboro;
+     margin: auto;
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+ #most-discounts h1{
+     position: relative;
+     left: 240px;
+     top: -35px;
+     display: inline-block;
+     font-size: 25px;
+     padding: 20px 35px;
+     border-radius: 50px;
+     font-family: 'fun';
+ }
+ #most-discounts ul{
+     margin: auto;
+ }
+ #most-discounts ul a li{
+     position: relative;
+     display: inline-block;
+     background-color: white;
+     width: 327px;
+     height: 375px;
+     margin: 20px;
+     box-sizing: border-box;
+     border-radius: 20px 20px 0 0;
+ }
+ #most-discounts ul a li img{
+     width: 327px;
+     height: 250px;
+     border-radius: 20px 20px 0 0
+ }
+ /*Discounts */
+ #discounts{
+     width: 740px;
+     height: 1750px;
+     background-color: gainsboro;
+     margin: auto;
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+ #discounts h1{
+     position: relative;
+     left: 230px;
+     top: -35px;
+     display: inline-block;
+     font-size: 25px;
+     padding: 20px 35px;
+     border-radius: 50px;
+     font-family: 'fun';
+ }
+ #discounts ul{
+     margin: auto;
+ }
+ #discounts ul a li{
+     position: relative;
+     display: inline-block;
+     background-color: white;
+     width: 327px;
+     height: 375px;
+     margin: 20px;
+     box-sizing: border-box;
+     border-radius: 20px 20px 0 0;
+ }
+ #discounts ul a li img{
+     width: 327px;
+     height: 250px;
+     border-radius: 20px 20px 0 0
+ }
+ #offers-in-pop{
+     display: inline-block;
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     padding: 5px 15px 0 15px;
+     background-color: rgb(255, 0, 98);
+     border-radius: 20px;
+     color: white;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ .list{
+     position: relative;
+ }
+ .list:hover{
+     -webkit-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     -moz-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     border-radius: 20px 20px 0 0;
+ }
+ .list h2{
+     float: right;
+     margin: 15px 10px;
+     color: black;
+     font-family: 'fun';
+ }
+ .fa-map-marker{
+     position: absolute;
+     right: 10px;
+     top: 300px;
+     color: rgb(0, 140, 255);
+     color: rgb(2, 146, 190);
+ }
+ .list strong{
+     position: absolute;
+     right: 30px;
+     top: 300px;
+     color: #282828;
+ }
+ .fa-eye{
+     position: absolute;
+     right: 5px;
+     top: 335px;
+     color: rgb(2, 146, 190);
+ }
+ .list p{
+     position: absolute;
+     right: 25px;
+     top: 335px;
+     color: #282828;
+ }
+ /* FOOTER */
+ footer{
+     height: 400px;
+     width: 768px;
+     background-color: #323232;
+     position: relative;
+ }
+ }
+ @media only screen and (max-width:425px) {
+    .category1{
+        width: 423px;
+        background-color: rgb(245, 39, 66);
+        height: 100px;
+        border-radius: 0 0 50% 50%;
+    }
+    .category2{
+        width: 423px;
+        margin: auto;
+        position: relative;
+    }
+    .category2 h1{
+        color: wheat;
+        position: absolute;
+        font-weight: bold;
+        font-size: 20px;
+        left: 124px;
+        top: 30px;
+        display: inline-block;
+        font-family: "fun";
+    }
+    /* Most DISCOUNT */
+    #most-discounts{
+     width: 410px;
+     height: 650px;
+     background-color: gainsboro;
+     margin: auto;
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+ #most-discounts h1{
+     position: relative;
+     left: 110px;
+     top: -35px;
+     display: inline-block;
+     font-size: 15px;
+     padding: 20px 35px;
+     border-radius: 50px;
+     font-family: 'fun';
+ }
+ #most-discounts ul{
+     margin: auto;
+ }
+ #most-discounts ul a li{
+     position: relative;
+     display: inline-block;
+     background-color: white;
+     width: 160px;
+     height: 250px;
+     margin: 20px;
+     box-sizing: border-box;
+     border-radius: 20px 20px 0 0;
+ }
+ #most-discounts ul a li img{
+     width: 160px;
+     height: 160px;
+     border-radius: 20px 20px 0 0
+ }
+ /*Discounts */
+ #discounts{
+     width: 410px;
+     height: 1220px;
+     background-color: gainsboro;
+     margin: auto;
+     margin-bottom: 50px;
+     margin-top: 50px;
+ }
+ #discounts h1{
+     position: relative;
+     left: 100px;
+     top: -35px;
+     display: inline-block;
+     font-size: 15px;
+     padding: 20px 35px;
+     border-radius: 50px;
+     font-family: 'fun';
+ }
+ #discounts ul{
+     margin: auto;
+ }
+ #discounts ul a li{
+     position: relative;
+     display: inline-block;
+     background-color: white;
+     width: 160px;
+     height: 250px;
+     margin: 20px;
+     box-sizing: border-box;
+     border-radius: 20px 20px 0 0;
+ }
+ #discounts ul a li img{
+     width: 160px;
+     height: 160px;
+     border-radius: 20px 20px 0 0
+ }
+ #offers-in-pop{
+     display: inline-block;
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     padding: 5px 15px;
+     background-color: rgb(255, 0, 98);
+     border-radius: 20px;
+     color: white;
+     font-size: 15px;
+     font-weight: bold;
+ }
+ .list{
+     position: relative;
+ }
+ .list:hover{
+     -webkit-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     -moz-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+     border-radius: 20px 20px 0 0;
+ }
+ .list h2{
+     font-size: 12px;
+     float: right;
+     margin: 15px 10px;
+     color: black;
+     font-family: 'fun';
+ }
+ .fa-map-marker{
+     position: absolute;
+     right: 10px;
+     top: 200px;
+     color: rgb(0, 140, 255);
+     font-size: 12px;
+ }
+ .list strong{
+     position: absolute;
+     right: 25px;
+     top: 200px;
+     color: #282828;
+     font-size: 12px;
+ }
+ .fa-eye{
+     position: absolute;
+     right: 7px;
+     top: 225px;
+     color: rgb(2, 146, 190);
+     font-size: 12px;
+ }
+ .list p{
+     position: absolute;
+     right: 25px;
+     top: 225px;
+     color: #282828;
+     font-size: 12px;
+ }
+ }
