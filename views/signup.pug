@@ -2,8 +2,14 @@ extend layoutes/mainlayoute.pug
 block style
 block body
     form(action="/signup" method="post")
-        label(for="title") Title
-        input(type="text" name="title" placeholder="title")
+        label(for="title") Name
+        input(type="text" name="name" placeholder="Name")
+        label(for="title") Lastname
+        input(type="text" name="lastname" placeholder="LastName")
+        label(for="title") User
+        input(type="text" name="user" placeholder="User")
+        label(for="title") E-mail
+        input(type="email" name="email" placeholder="Email")
         button send
 block footer
     

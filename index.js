@@ -1,6 +1,7 @@
 const express = require('express')
 const fs = require('fs')
 const http = require('http')
+const sql= require('./db/db_connection');
 const morgan = require('morgan')
 const logger = require('./utils/logger')
 const bodyParser = require('body-parser')
@@ -29,6 +30,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.static(path.join(__dirname,'./public')))
 
 // routes
+
 app.use(home)
 app.use(category)
 app.use(signUp)
