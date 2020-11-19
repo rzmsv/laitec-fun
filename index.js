@@ -1,15 +1,18 @@
 const express = require('express')
 const fs = require('fs')
+const cookieParser = require('cookie-parser')
 const http = require('http')
 const sql= require('./db/db_connection');
 const morgan = require('morgan')
 const logger = require('./utils/logger')
 const bodyParser = require('body-parser')
+const session = require('express-session')
 const path = require('path')
 const pug = require('pug')
 const app = express()
 const server = http.createServer(app)
-const signUp = require('./routes/signup')
+const signUp = require('./routes/signup');
+const login = require('./routes/login')
 const home = require('./routes/home')
 const category = require('./routes/category')
 const detail = require('./routes/details')
@@ -24,6 +27,12 @@ var accessLogStream = fs.createWriteStream(path.join(__dirname, './logs/morganLo
 app.set('view engine','pug')
 app.set('views','views')
 // middleware
+app.use(cookieParser())
+app.use(session({
+    secret : 'my secret',
+    resave : false,
+    saveUninitialized : false
+}))
 app.use(morgan('combined', { stream: accessLogStream }))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
@@ -34,6 +43,7 @@ app.use(express.static(path.join(__dirname,'./public')))
 app.use(home)
 app.use(category)
 app.use(signUp)
+app.use(login)
 app.use(detail)
 app.use(user)
 app.use(admin)

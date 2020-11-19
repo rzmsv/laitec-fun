@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+html(lang="en")
+     head
+          meta(charset="UTF-8")
+          meta(name="viewport", content="width=device-width, initial-scale=1.0")
+          title #{title}
+     body
+          form(action="/login" method="post")
+               label(for="email") E-mail
+               input(type="email" name="email" placeholder="Please enter your EMAIL")
+               button(type="submit") Click
+          
+          if isAuth
+               h1 w
+          else
+               h1 s
