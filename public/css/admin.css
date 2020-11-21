@@ -1,0 +1,180 @@
+.clearfix{
+     float: none;
+     clear: both;
+}
+.container{
+     width: 1024px;
+     background-color:rgb(250, 250, 250);
+     margin: auto;
+}
+#fullname{
+     float: right;
+     display: inline;
+     margin: 15px;
+     font-size: 20px;
+     font-family: "fun";
+}
+#username{
+     float: right;
+     display: block;
+     margin: 15px;
+     font-size: 25px;
+     font-family: "fun";
+}
+.adminbox{
+     border-top: black 2px solid ;
+     padding: 20px;
+}
+label{
+     display: inline-block;
+     margin-top: 30px;
+     margin-left: 100px;
+     font-weight: bold;
+     font-family: "fun";
+}
+select{
+     display: block;
+     margin: -20px 0 0 200px;
+}
+textarea{
+     display: block;
+     margin: -20px 0 0 200px;
+}
+input{
+     width: 500px;
+     height: 30px;
+     display: block;
+     margin: -20px 0 0 200px;
+     border-radius: 5px;
+}
+button{
+     margin: 30px 0 0 200px;
+     padding: 5px 40px;
+     font-weight: bold;
+     background-color: rgb(42, 216, 85);
+     border: 1px white solid;
+     border-radius: 10px;
+     font-size: 19px;
+     font-family: "fun";
+}
+.edit button{
+     background-color: rgb(255, 174, 0);
+}
+.delete button{
+     background-color: rgba(255, 13, 13, 0.753);
+}
+@media only screen and (max-width: 768px) {
+     .container{
+          width: 768px;
+          background-color:rgb(250, 250, 250);
+          margin: auto;
+     }
+     #fullname{
+          float: right;
+          display: inline;
+          margin: 15px 30px;
+          font-size: 20px;
+          font-family: "fun";
+     }
+     #username{
+          float: right;
+          display: block;
+          margin: 15px 30px;
+          font-size: 25px;
+          font-family: "fun";
+     }
+     .adminbox{
+          border-top: black 2px solid ;
+          padding: 20px;
+     }
+     label{
+          display: inline-block;
+          margin-top: 30px;
+          margin-left: 20px;
+          font-weight: bold;
+          font-family: "fun";
+     }
+     select{
+          display: block;
+          margin: -20px 0 0 150px;
+     }
+     textarea{
+          display: block;
+          margin: -20px 0 0 150px;
+     }
+     input{
+          width: 500px;
+          height: 30px;
+          display: block;
+          margin: -20px 0 0 150px;
+          border-radius: 5px;
+     }
+     button{
+          margin: 30px 0 0 150px;
+          padding: 5px 40px;
+          font-weight: bold;
+          background-color: rgb(42, 216, 85);
+          border: 1px white solid;
+          border-radius: 10px;
+          font-size: 19px;
+          font-family: "fun";
+     }
+}
+@media only screen and (max-width: 425px) {
+     .container{
+          width: 425px;
+          background-color:rgb(250, 250, 250);
+          margin: auto;
+     }
+     #fullname{
+          float: right;
+          display: inline;
+          margin: 15px;
+          font-size: 20px;
+          font-family: "fun";
+     }
+     #username{
+          float: right;
+          display: block;
+          margin: 15px;
+          font-size: 25px;
+          font-family: "fun";
+     }
+     .adminbox{
+          border-top: black 2px solid ;
+          padding: 20px;
+     }
+     label{
+          display: inline-block;
+          margin-top: 30px;
+          margin-left: 20px;
+          font-weight: bold;
+          font-family: "fun";
+     }
+     select{
+          display: block;
+          margin: -20px 0 0 150px;
+     }
+     textarea{
+          display: block;
+          margin: -20px 0 0 150px;
+          width: 200px;
+     }
+     input{
+          width: 200px;
+          height: 30px;
+          display: block;
+          margin: -20px 0 0 150px;
+          border-radius: 5px;
+     }
+     button{
+          margin: 30px 0 0 150px;
+          padding: 5px 40px;
+          font-weight: bold;
+          background-color: rgb(42, 216, 85);
+          border: 1px white solid;
+          border-radius: 10px;
+          font-size: 19px;
+          font-family: "fun";
+     }
+}

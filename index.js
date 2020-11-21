@@ -39,14 +39,14 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.static(path.join(__dirname,'./public')))
 
 // routes
-
+app.use(admin)
 app.use(home)
 app.use(category)
 app.use(signUp)
 app.use(login)
 app.use(detail)
 app.use(user)
-app.use(admin)
+
 
 app.use(ErrorPage.error)
 //.....

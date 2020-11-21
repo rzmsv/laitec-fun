@@ -5,10 +5,10 @@ const sql= require('../db/db_connection');
 
 router.get('/signup',signUpPage.signup)
 router.post('/signup',(req,res)=>{
-    const name = req.body.name
-    const lastname = req.body.lastname
-    const user = req.body.user
-    const email = req.body.email
+    var name = req.body.name
+    var lastname = req.body.lastname
+    var user = req.body.user
+    var email = req.body.email
     if(!res){
         res.redirect('/')
     }

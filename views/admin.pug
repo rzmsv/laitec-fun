@@ -1,7 +1,56 @@
-<!DOCTYPE html>
-html(lang="en")
-     head
-          meta(charset="UTF-8")
-          meta(name="viewport", content="width=device-width, initial-scale=1.0")
-          title Document
-     body
+extend layoutes/mainlayoute.pug
+
+block style
+block body
+
+     .container
+          .about
+               h1#fullname رضا موسوی
+               .clearfix
+               h1#username Username
+               .clearfix
+          .adminbox     
+               ul
+                    li
+                         .manager
+                              form(class="create",action="/admin", method="post")
+                                   label(for="category") کتگوری
+                                   select(name="category")
+                                        option(value="رستوران و کافی شاپ") رستوران و کافی شاپ
+                                        option(value="دوره آموزشی") دوره آموزشی
+                                        option(value="مجموعه ورزشی") مجموعه ورزشی
+                                   label(for="image1")  عکس اصلی
+                                   input(type="text",name="image1")
+                                   label(for="name") عنوان
+                                   input(type="text" name="name")
+                                   label(for="off") درصد تخفیف
+                                   input(type="number" name="off")
+                                   label(for="address1") آدرس
+                                   input(type="text" name="address1")
+                                   label(for="image11") عکس اول
+                                   input(type="text" name="image11")
+                                   label(for="image12") عکس دوم
+                                   input(type="text" name="image12")
+                                   label(for="image13") عکس سوم
+                                   input(type="text" name="image13")
+                                   label(for="description") توضیحات
+                                   textarea(name="description", cols="60", rows="10")
+                                   label(for="timeout") مدت اعتبار
+                                   input(type="number" name="timeout" step="0.00")
+                                   button تایید
+
+                              form(class="edit",action="/edit", method="post")
+                                   label(for="name") عنوان
+                                   input(type="text" name="name")
+                                   label(for="off") درصد تخفیف
+                                   input(type="number" name="off")
+                                   label(for="timeout") مدت اعتبار
+                                   input(type="number" name="timeout" step="0.00")
+                                   button بروزرسانی
+
+                              form(class="delete",action="/del", method="post")
+                                   label(for="name") عنوان
+                                   input(type="text", name="name")
+                                   button حذف
+                                   
+                                
