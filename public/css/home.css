@@ -24,7 +24,6 @@ body{
 /* popular Area */
 #popular-offers{
     width: 1024px;
-    height: 780px;
     background-color: gainsboro;
     margin: auto;
     margin-bottom: 50px;
@@ -51,7 +50,7 @@ body{
 #popular-offers ul{
     margin: auto;
 }
-#popular-offers ul a li{
+#popular-offers ul li{
     position: relative;
     display: inline-block;
     background-color: white;
@@ -61,7 +60,7 @@ body{
     box-sizing: border-box;
     border-radius: 5px 5px 0 0;
 }
-#popular-offers ul a li:hover{
+#popular-offers ul li:hover{
     -webkit-box-shadow: -1px 0px 10px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 0px 10px -4px rgba(0,0,0,0.75);
     box-shadow: -1px 0px 10px -4px rgba(0,0,0,0.75);
@@ -69,7 +68,7 @@ body{
     /* border-radius: 25px!important; */
 }
 
-#popular-offers ul a li img{
+#popular-offers ul li img{
     width: 210px;
     height: 200px;
     border-radius: 5px 5px 0 0
@@ -176,66 +175,7 @@ body{
     color: white;
     font-family: 'fun';
 }
-/*Slidr*/
-#ad{
-    overflow: hidden;
-    width: 1024px;
-    height:300px;
-    margin: 50px auto;
-}
-#ad figure{
-    position: relative;
-    width: 500%;
-    /* margin: 0; */
-    /* left: 0; */
-    animation: 20s ad infinite;
-}
-#ad figure img{
-    width: 20%;
-    float: left;
-}
-@keyframes ad {
-    0%{
-        left: 0;
-    }
-    20%{
-        left: 0;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left: -100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left: -200%;
-    }
-    75%{
-        left: -300%;
-    }
-    95%{
-        left: -300%;
-    }
-    100%{
-        left: -400%;
-    }
-}
-/* #more{
-    background-color: #F34242;
-    color: white;
-    border-radius: 40px;
-    padding: 5px 20px; */
-    /* position:relative ;
-    top: -90px;
-    left: 600px;
-    bottom: 90px;
-    z-index: 10; */
-/* } */
-/*End slider*/
-/*media Query*/
+
 @media only screen and (max-width:768px) {
     /* For tablets: */
    .clearfix{
@@ -268,7 +208,6 @@ body{
     /*popular-offers*/
     #popular-offers{
         width: 768px;
-        height: 1800px;
         background-color: gainsboro;
         margin: auto;
         margin-bottom: 50px;
@@ -317,28 +256,23 @@ body{
     .list{
         position: relative;
     }
-    /* .list:hover{
-        -webkit-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
-        -moz-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
-        box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
-        border-radius: 20px 20px 0 0;
-    } */
+   
     .list h2{
         float: right;
-        margin: 15px 10px;
+        margin: 25px 10px 0 0;
         color: black;
         font-family: 'fun';
     }
     .list strong{
         position: absolute;
         right: 30px;
-        top: 300px;
+        top: 260px;
         color: #282828;
     }
     .fa-map-marker{
         position: absolute;
         right: 10px;
-        top: 300px;
+        top: 260px;
         color: rgb(0, 140, 255);
         color: rgb(2, 146, 190);
     }
@@ -442,7 +376,6 @@ body{
     /*popular-offers*/
     #popular-offers{
     width: 425px;
-    height: 3475px;
     background-color: gainsboro;
     margin: auto;
     }

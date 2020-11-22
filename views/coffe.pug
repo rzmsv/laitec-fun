@@ -1,0 +1,36 @@
+
+extend layoutes/mainlayoute.pug
+block style
+block body
+     div.category1
+          div.category2
+               h1 #{category}
+     div#most-discounts
+          h1 بیشترین تخفیفات
+          ul
+               each v,k in most               
+                    a(href="#")    
+                         li
+                              div.list
+                                   img(src=v.main_pic alt="")
+                                   p#offers-in-pop= v.off
+                                   h2#mch2= v.name
+                                   i(id="mci" class="fa fa-map-marker" aria-hidden="true") 
+                                   strong#mcs= v.address
+               
+     div.clearfix
+     div#discounts
+          h1 محبوبترین تخفیفات
+          ul
+               each v,k in all              
+                    li    
+                         a(href="#")
+                              div.list
+                                   div.list
+                                   img(src=v.main_pic alt="")
+                                   p#offers-in-pop= v.off
+                                   h2#mch2= v.name
+                                   i(id="mci" class="fa fa-map-marker" aria-hidden="true") 
+                                   strong#mcs= v.address
+          div.clearfix 
+block footer

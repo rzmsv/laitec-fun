@@ -48,20 +48,22 @@ input{
      border-radius: 5px;
 }
 button{
-     margin: 30px 0 0 200px;
+     margin: 30px 0 0 400px;
      padding: 5px 40px;
      font-weight: bold;
      background-color: rgb(42, 216, 85);
-     border: 1px white solid;
+     border: 1px gray solid;
      border-radius: 10px;
      font-size: 19px;
      font-family: "fun";
 }
 .edit button{
      background-color: rgb(255, 174, 0);
+     margin-left: 380px;
 }
 .delete button{
      background-color: rgba(255, 13, 13, 0.753);
+     margin-left: 395px;
 }
 @media only screen and (max-width: 768px) {
      .container{
@@ -110,14 +112,20 @@ button{
           border-radius: 5px;
      }
      button{
-          margin: 30px 0 0 150px;
+          margin: 30px 0 0 350px;
           padding: 5px 40px;
           font-weight: bold;
           background-color: rgb(42, 216, 85);
-          border: 1px white solid;
           border-radius: 10px;
           font-size: 19px;
           font-family: "fun";
+     }
+     .edit button{
+          margin-left: 335px;
+     }
+     .delete button{
+          background-color: rgba(255, 13, 13, 0.753);
+          margin-left: 350px;
      }
 }
 @media only screen and (max-width: 425px) {
@@ -172,9 +180,15 @@ button{
           padding: 5px 40px;
           font-weight: bold;
           background-color: rgb(42, 216, 85);
-          border: 1px white solid;
           border-radius: 10px;
           font-size: 19px;
           font-family: "fun";
+     }
+     .edit button{
+          margin-left: 150px;
+     }
+     .delete button{
+          background-color: rgba(255, 13, 13, 0.753);
+          margin-left: 150px;
      }
 }

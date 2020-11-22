@@ -22,14 +22,13 @@
     position: absolute;
     font-weight: bold;
     font-size: 25px;
-    left: 390px;
+    left: 410px;
     top: 30px;
     display: inline-block;
     font-family: "fun";
 }
 #most-discounts{
      width: 1024px;
-     height: 450px;
      background-color: gainsboro;
      margin: auto;
      margin-bottom: 50px;
@@ -50,7 +49,7 @@
  #most-discounts ul{
      margin: auto;
  }
- #most-discounts ul a li{
+ #most-discounts ul li{
      position: relative;
      display: inline-block;
      background-color: white;
@@ -60,15 +59,15 @@
      box-sizing: border-box;
      border-radius: 5px 5px 0 0;
  }
- #most-discounts ul a li img{
+ #most-discounts ul li img{
      width: 210px;
      height: 200px;
      border-radius: 5px 5px 0 0
  }
+ 
  /*Discounts */
  #discounts{
      width: 1024px;
-     height: 780px;
      background-color: gainsboro;
      margin: auto;
      margin-bottom: 50px;
@@ -89,7 +88,7 @@
  #discounts ul{
      margin: auto;
  }
- #discounts ul a li{
+ #discounts ul li{
      position: relative;
      display: inline-block;
      background-color: white;
@@ -99,7 +98,7 @@
      box-sizing: border-box;
      border-radius: 5px 5px 0 0;
  }
- #discounts ul a li img{
+ #discounts ul li img{
      width: 210px;
      height: 200px;
      border-radius: 5px 5px 0 0
@@ -116,14 +115,14 @@
      font-size: 20px;
      font-family:"fun";
  }
+ .list:hover{
+    -webkit-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
+    border-radius: 20px 20px 0 0;
+}
  .list{
      position: relative;
- }
- .list:hover{
-     -webkit-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
-     -moz-box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
-     box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
-     border-radius: 5px 5px 0 0;
  }
  .list h2{
      float: right;
@@ -183,13 +182,12 @@
     /* Most DISCOUNT */
     #most-discounts{
      width: 740px;
-     height: 950px;
      background-color: gainsboro;
      margin: auto;
      margin-bottom: 50px;
      margin-top: 50px;
  }
- #most-discounts h1{
+    #most-discounts h1{
      position: relative;
      left: 240px;
      top: -35px;
@@ -202,7 +200,8 @@
  #most-discounts ul{
      margin: auto;
  }
- #most-discounts ul a li{
+
+ #most-discounts ul li{
      position: relative;
      display: inline-block;
      background-color: white;
@@ -212,7 +211,7 @@
      box-sizing: border-box;
      border-radius: 20px 20px 0 0;
  }
- #most-discounts ul a li img{
+ #most-discounts ul li img{
      width: 327px;
      height: 250px;
      border-radius: 20px 20px 0 0
@@ -220,11 +219,10 @@
  /*Discounts */
  #discounts{
      width: 740px;
-     height: 1750px;
      background-color: gainsboro;
      margin: auto;
      margin-bottom: 50px;
-     margin-top: 50px;
+     margin-top: 100px;
  }
  #discounts h1{
      position: relative;
@@ -239,7 +237,7 @@
  #discounts ul{
      margin: auto;
  }
- #discounts ul a li{
+ #discounts ul li{
      position: relative;
      display: inline-block;
      background-color: white;
@@ -249,7 +247,7 @@
      box-sizing: border-box;
      border-radius: 20px 20px 0 0;
  }
- #discounts ul a li img{
+ #discounts ul li img{
      width: 327px;
      height: 250px;
      border-radius: 20px 20px 0 0
@@ -275,23 +273,22 @@
      box-shadow: -1px 0px 18px -4px rgba(0,0,0,0.75);
      border-radius: 20px 20px 0 0;
  }
- .list h2{
+ .list #mch2{
      float: right;
-     margin: 15px 10px;
+     margin: 30px 30px 0 0;
      color: black;
      font-family: 'fun';
  }
- .fa-map-marker{
+ #mci{
      position: absolute;
      right: 10px;
-     top: 300px;
-     color: rgb(0, 140, 255);
+     top: 320px;
      color: rgb(2, 146, 190);
  }
- .list strong{
+ .list #mcs{
      position: absolute;
      right: 30px;
-     top: 300px;
+     top: 320px;
      color: #282828;
  }
  .fa-eye{
@@ -358,7 +355,7 @@
  #most-discounts ul{
      margin: auto;
  }
- #most-discounts ul a li{
+ #most-discounts ul li{
      position: relative;
      display: inline-block;
      background-color: white;
@@ -368,7 +365,7 @@
      box-sizing: border-box;
      border-radius: 20px 20px 0 0;
  }
- #most-discounts ul a li img{
+ #most-discounts ul li img{
      width: 160px;
      height: 160px;
      border-radius: 20px 20px 0 0
@@ -395,7 +392,7 @@
  #discounts ul{
      margin: auto;
  }
- #discounts ul a li{
+ #discounts ul li{
      position: relative;
      display: inline-block;
      background-color: white;
@@ -405,7 +402,7 @@
      box-sizing: border-box;
      border-radius: 20px 20px 0 0;
  }
- #discounts ul a li img{
+ #discounts ul li img{
      width: 160px;
      height: 160px;
      border-radius: 20px 20px 0 0

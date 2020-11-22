@@ -6,7 +6,7 @@ const sql= require('../db/db_connection');
 
 router.get('/admin',(homePage.admin))
 router.post('/admin',(req,res)=>{
-     var category = req.body.category
+     var category = req.body.cat
      var main_pic = req.body.image1
      var name = req.body.name
      var off = req.body.off

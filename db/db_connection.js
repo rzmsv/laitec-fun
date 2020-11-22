@@ -45,6 +45,85 @@ module.exports.insertOffersTable = (category,main_pic,name,off,address,image1,im
           }
      )
 }
+module.exports.readOffers =()=>{
+     
+          return new Promise((resolve,reject)=>{
+               var readOffers = 'SELECT * FROM offers;'
+          connection.query(readOffers,function(err,res){
+               if(err){
+                    console.log(err)
+               }
+               resolve(res)
+               })
+          })
+          
+}
+module.exports.coffeMost = ()=>{
+     return new Promise((resolve,reject)=>{
+          var most = "SELECT * FROM offers WHERE category = 'coffe' && off > 20 ORDER BY created_at DESC LIMIT 4;"
+          connection.query(most,(err,res)=>{
+               if (err){
+                    console.log(err)
+               }
+               resolve(res)
+          })
+     })
+}
+module.exports.coffeAll = ()=>{
+     return new Promise((resolve,reject)=>{
+          var most = "SELECT * FROM offers WHERE category = 'coffe' ORDER BY created_at DESC;"
+          connection.query(most,(err,res)=>{
+               if (err){
+                    console.log(err)
+               }
+               resolve(res)
+          })
+     })
+}
+module.exports.sportMost = ()=>{
+     return new Promise((resolve,reject)=>{
+          var most = "SELECT * FROM offers WHERE category = 'sport' && off > 50 ORDER BY created_at DESC LIMIT 4;"
+          connection.query(most,(err,res)=>{
+               if (err){
+                    console.log(err)
+               }
+               resolve(res)
+          })
+     })
+}
+module.exports.sportAll = ()=>{
+     return new Promise((resolve,reject)=>{
+          var most = "SELECT * FROM offers WHERE category = 'sport' ORDER BY created_at DESC;"
+          connection.query(most,(err,res)=>{
+               if (err){
+                    console.log(err)
+               }
+               resolve(res)
+          })
+     })
+}
+module.exports.educationMost = ()=>{
+     return new Promise((resolve,reject)=>{
+          var most = "SELECT * FROM offers WHERE category = 'edu' && off > 50 ORDER BY created_at DESC LIMIT 4;"
+          connection.query(most,(err,res)=>{
+               if (err){
+                    console.log(err)
+               }
+               resolve(res)
+          })
+     })
+}
+module.exports.educationAll = ()=>{
+     return new Promise((resolve,reject)=>{
+          var most = "SELECT * FROM offers WHERE category = 'edu' ORDER BY created_at DESC;"
+          connection.query(most,(err,res)=>{
+               if (err){
+                    console.log(err)
+               }
+               resolve(res)
+          })
+     })
+}
 module.exports.editOffer = (name,off,timeout)=>{
      var edit = 'UPDATE offers SET off= ? , timeout=? WHERE name = ?'
      connection.query(edit,[off,timeout,name],function(err,res){
