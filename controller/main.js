@@ -4,7 +4,7 @@ const sql = require('../db/db_connection')
 module.exports.home = (req,res,next)=>{
  function read (read){
         return new Promise((resolve,reject)=>{
-            for (i=0;i<read.length;i++)
+            // for (i=0;i<read.length;i++)
             resolve(res.render('home',{title : 'Laitec Fun Page',a: read}))
         })
     }    
