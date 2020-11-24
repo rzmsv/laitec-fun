@@ -7,48 +7,50 @@
      background-color:rgb(250, 250, 250);
      margin: auto;
 }
-#fullname{
+#adminName{
      float: right;
      display: inline;
      margin: 15px;
      font-size: 20px;
      font-family: "fun";
 }
-#username{
+#adminUser{
      float: right;
      display: block;
      margin: 15px;
      font-size: 25px;
      font-family: "fun";
 }
-.adminbox{
+#adminbox{
      border-top: black 2px solid ;
      padding: 20px;
 }
-label{
+#adminbox label{
      display: inline-block;
-     margin-top: 30px;
+     margin-top: 40px;
      margin-left: 100px;
      font-weight: bold;
      font-family: "fun";
+     color: black;
 }
-select{
+.create select{
+     display: block;
+     margin: -20px 0 0 200px;
+     height: 30px;
+}
+#adminbox textarea{
      display: block;
      margin: -20px 0 0 200px;
 }
-textarea{
-     display: block;
-     margin: -20px 0 0 200px;
-}
-input{
+#adminbox input{
      width: 500px;
      height: 30px;
      display: block;
      margin: -20px 0 0 200px;
      border-radius: 5px;
 }
-button{
-     margin: 30px 0 0 400px;
+#adminbox button{
+     margin: 30px 0 0 200px;
      padding: 5px 40px;
      font-weight: bold;
      background-color: rgb(42, 216, 85);
@@ -57,13 +59,13 @@ button{
      font-size: 19px;
      font-family: "fun";
 }
-.edit button{
+#adminbox .edit button{
      background-color: rgb(255, 174, 0);
-     margin-left: 380px;
+     margin-left: 200px;
 }
-.delete button{
+#adminbox .delete button{
      background-color: rgba(255, 13, 13, 0.753);
-     margin-left: 395px;
+     margin-left: 200px;
 }
 @media only screen and (max-width: 768px) {
      .container{
@@ -71,111 +73,47 @@ button{
           background-color:rgb(250, 250, 250);
           margin: auto;
      }
-     #fullname{
+     #adminName{
           float: right;
           display: inline;
           margin: 15px 30px;
           font-size: 20px;
           font-family: "fun";
      }
-     #username{
+     #adminUser{
           float: right;
           display: block;
           margin: 15px 30px;
           font-size: 25px;
           font-family: "fun";
      }
-     .adminbox{
+     #adminbox{
           border-top: black 2px solid ;
           padding: 20px;
      }
-     label{
+     #adminbox label{
           display: inline-block;
           margin-top: 30px;
-          margin-left: 20px;
+          margin-left: 60px;
           font-weight: bold;
           font-family: "fun";
      }
-     select{
+     #adminbox select{
           display: block;
           margin: -20px 0 0 150px;
      }
-     textarea{
+     #adminbox textarea{
           display: block;
           margin: -20px 0 0 150px;
      }
-     input{
+     #adminbox input{
           width: 500px;
           height: 30px;
           display: block;
           margin: -20px 0 0 150px;
           border-radius: 5px;
      }
-     button{
-          margin: 30px 0 0 350px;
-          padding: 5px 40px;
-          font-weight: bold;
-          background-color: rgb(42, 216, 85);
-          border-radius: 10px;
-          font-size: 19px;
-          font-family: "fun";
-     }
-     .edit button{
-          margin-left: 335px;
-     }
-     .delete button{
-          background-color: rgba(255, 13, 13, 0.753);
-          margin-left: 350px;
-     }
-}
-@media only screen and (max-width: 425px) {
-     .container{
-          width: 425px;
-          background-color:rgb(250, 250, 250);
-          margin: auto;
-     }
-     #fullname{
-          float: right;
-          display: inline;
-          margin: 15px;
-          font-size: 20px;
-          font-family: "fun";
-     }
-     #username{
-          float: right;
-          display: block;
-          margin: 15px;
-          font-size: 25px;
-          font-family: "fun";
-     }
-     .adminbox{
-          border-top: black 2px solid ;
-          padding: 20px;
-     }
-     label{
-          display: inline-block;
-          margin-top: 30px;
-          margin-left: 20px;
-          font-weight: bold;
-          font-family: "fun";
-     }
-     select{
-          display: block;
-          margin: -20px 0 0 150px;
-     }
-     textarea{
-          display: block;
-          margin: -20px 0 0 150px;
-          width: 200px;
-     }
-     input{
-          width: 200px;
-          height: 30px;
-          display: block;
-          margin: -20px 0 0 150px;
-          border-radius: 5px;
-     }
-     button{
+     #adminbox button{
           margin: 30px 0 0 150px;
           padding: 5px 40px;
           font-weight: bold;
@@ -184,11 +122,75 @@ button{
           font-size: 19px;
           font-family: "fun";
      }
-     .edit button{
+     #adminbox .edit button{
           margin-left: 150px;
      }
-     .delete button{
+     #adminbox .delete button{
           background-color: rgba(255, 13, 13, 0.753);
           margin-left: 150px;
+     }
+}
+@media only screen and (max-width: 425px) {
+     .container{
+          width: 425px;
+          background-color:rgb(250, 250, 250);
+          margin: auto;
+     }
+     #adminName{
+          float: right;
+          display: inline;
+          margin: 15px;
+          font-size: 20px;
+          font-family: "fun";
+     }
+     #adminUser{
+          float: right;
+          display: block;
+          margin: 15px;
+          font-size: 25px;
+          font-family: "fun";
+     }
+     #adminbox{
+          border-top: black 2px solid ;
+          padding: 20px;
+     }
+     #adminbox label{
+          display: inline-block;
+          margin-top: 30px;
+          margin-left: 10px;
+          font-weight: bold;
+          font-family: "fun";
+     }
+     #adminbox select{
+          display: block;
+          margin: -20px 0 0 120px;
+     }
+     #adminbox textarea{
+          display: block;
+          margin: -20px 0 0 120px;
+          width: 200px;
+     }
+     #adminbox input{
+          width: 200px;
+          height: 30px;
+          display: block;
+          margin: -20px 0 0 120px;
+          border-radius: 5px;
+     }
+     #adminbox button{
+          margin: 30px 0 0 120px;
+          padding: 5px 40px;
+          font-weight: bold;
+          background-color: rgb(42, 216, 85);
+          border-radius: 10px;
+          font-size: 19px;
+          font-family: "fun";
+     }
+     #adminbox .edit button{
+          margin-left: 120px;
+     }
+     #adminbox .delete button{
+          background-color: rgba(255, 13, 13, 0.753);
+          margin-left: 120px;
      }
 }

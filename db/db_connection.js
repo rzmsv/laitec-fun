@@ -7,12 +7,13 @@ const mysql = require('mysql2');
           password : 'Reza1989@'
         });
 
-module.exports.create = (name,lastname,user,email)=>{
+module.exports.create = (name,lastname,user,email,password)=>{
      var person = {
           name : name,
           lastname: lastname,
           user : user ,
-          email : email
+          email : email,
+          password : password
      }
      connection.query(
           'INSERT INTO users SET ?',person,function(err,result){
@@ -22,6 +23,21 @@ module.exports.create = (name,lastname,user,email)=>{
                console.log(result)
           }
      )
+}
+module.exports.loginUser= (user,password)=>{
+     var user = {
+          user : user,
+          password : password
+     }
+     return new Promise((resolve,reject)=>{
+          var giveUser = 'SELECT * FROM users WHERE user=? && password=?;'
+               connection.query(giveUser,[user.user,user.password],(err,res)=>{
+               if(err){
+                    console.log(err)
+               }
+               resolve(res)
+          })
+     })
 }
 module.exports.insertOffersTable = (category,main_pic,name,off,address,image1,image2,image3,description,timeout)=>{
      var offers = {

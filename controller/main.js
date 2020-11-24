@@ -1,4 +1,5 @@
 // HOME PAGE
+const { log } = require('winston')
 const sql = require('../db/db_connection')
 
 module.exports.home = (req,res,next)=>{
@@ -86,14 +87,46 @@ module.exports.signup =(req,res,next)=>{
 // login
 module.exports.login =(req,res,next)=>{
  var loggedIn = req.get('Cookie')
- console.log(req.session.loggedIn)
-    res.render('login',{title : 'Login Page',isAuth : loggedIn})
-}
+ console.log(loggedIn)
+ async function loged(){
+    if(loggedIn){
+       return await res.render('user')
+    }
+   //  console.log(req.session.loggedIn)
+       res.render('login',{title : 'Login Page'})
+   }
+  loged() 
+ }
+ 
 // post login
 module.exports.postLogin = (req,res,next)=>{
-    res.cookie('Cookies',req.cookies,{ expires: new Date(Date.now() + 5000), httpOnly: true })
-    req.session.loggedIn = true
-    res.redirect('/')
+    var user = req.body.username
+    var password = req.body.password
+    function cookie (one){
+        res.cookie('Cookies',req.cookies,{ expires: new Date(Date.now() + 10000), httpOnly: true })
+        // req.session.loggedIn = true
+        res.render('user',{title : `Welcome to your page dear ${one[0].name}`,name:one[0].name,lastname:one[0].lastname})
+    }
+    
+    function getUser (one){
+        console.log(one)
+        if (one.length === 0){
+            res.redirect('/')
+        }
+        cookie(one)
+    }
+    async function display (){
+        try {
+            var one = await sql.loginUser(user,password)
+            var two = await getUser(one)
+        } catch (error) {
+            console.log('DATABASE is empty !')
+        }
+    }
+    display()
+      
+        
+    
 }
 module.exports.detail = (req,res,next)=>{
     res.render('detail',{title : 'Detail Page'})

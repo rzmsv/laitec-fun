@@ -1,8 +1,29 @@
-<!DOCTYPE html>
-html(lang="en")
-     head
-          meta(charset="UTF-8")
-          meta(name="viewport", content="width=device-width, initial-scale=1.0")
-          title Document
-     body
+extend layoutes/mainlayoute.pug
+block style
+block body
+     #containerUser
+          #infoUser
+               #first-childUser
+                    h1#nameUser #{name}
+                    h1#lastNameUser #{lastname}
+                    form(id="formUser" action="/user" method="post")
+                         input(type="password" .input3 name="userpass" placeholder="*********"  value="**********")
+                         button ویرایش
+                    
+          #savedDis
+               h1 تخفیفات ذخیره شده
+               ul
+                    a(href="#")
+                         li
+                              .listUser
+                                   img(src="image/photo-1.jpg", alt="")
+                                   h1 باشگاه ورزشی اکسین
+                                   p تخفیف %30
+                    a(href="#")
+                         li 
+                              .listUser
+                                   img(src="image/photo-1.jpg", alt="")
+                                   h1 باشگاه ورزشی اکسین
+                                   p تخفیف %30
+block footer
           

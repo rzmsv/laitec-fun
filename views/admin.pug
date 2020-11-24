@@ -3,18 +3,18 @@ extend layoutes/mainlayoute.pug
 block style
 block body
 
-     .container
+     #containerAdmin
           .about
-               h1#fullname رضا موسوی
+               h1#adminName رضا موسوی
                .clearfix
-               h1#username Username
+               h1#adminUser Username
                .clearfix
-          .adminbox     
+          #adminbox     
                ul
                     li
                          .manager
                               form(class="create",action="/admin", method="post")
-                                   label(for="cat") کتگوری
+                                   label(id="labelAdmin" for="cat") کتگوری
                                    select(name="cat")
                                         option(value="coffe") رستوران و کافی شاپ
                                         option(value="edu") دوره آموزشی

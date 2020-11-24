@@ -1,0 +1,361 @@
+.clearfix{
+    clear: both;
+    float: none;
+}
+#containerUser{
+    width: 1024px;
+    margin: auto;
+}
+#nameUser{
+    color: black;
+    font-size: 20px;
+    text-align: right;
+    margin: 20px;
+    font-family: "fun";
+}
+#lastNameUser{
+    color: black;
+    font-size: 20px;
+    text-align: right;
+    margin: 20px;
+    font-family: "fun";
+}
+#infoUser{
+    width: 1024px;
+    height: 190px;
+    background-color: lightgray;
+    margin: auto;
+    border: 1px solid gray;
+}
+#first-childUser{
+    width: 300px;
+    height: 190px;
+    background-color: white;
+    float: right;
+}
+#first-childUser #formUser{
+    margin-top: -15px
+}
+#first-childUser #formUser input{
+    float: right;
+    margin: 6px;
+    text-align: right;
+    width: 220px;
+    border: none;
+    font-size: 22px;
+}
+#first-childUser #formUser button{
+    background-color:white;
+    border: none;
+    font-size: 16px;
+    color: #ba301b;
+    margin-top: -10px;
+    margin-left: 164px;
+    border: 1px solid gray;
+}
+#savedDis{
+    width: 1024px;
+    height: 250px;
+    margin: 30px auto;
+    background-color: whitesmoke;
+    border:1px solid rgba(53, 43, 43, 0.45);
+}
+#savedDis h1{
+    text-align: center;
+    color: black;
+    margin:10px auto;
+    font-size: 22px;
+    font-family: 'fun', serif;
+}
+#savedDis ul{
+    width: inherit;
+    height: 209px;
+    margin:0 auto;
+    background-color: lightgrey;
+}
+#savedDis ul li{
+    width:450px;
+    height: 150px;
+    display: inline-block;
+    margin-left:40px;
+    margin-top: 30px;
+}
+#savedDis ul li .listUser{
+    width: inherit;
+    background-color:whitesmoke;
+    height: inherit;
+    float: right;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+#savedDis ul li .listUser img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    padding-left: 10px;
+    float: right;
+}
+#savedDis ul li{
+    transition: all 0.5s ease;
+}
+#savedDis ul li:hover{
+        transform: scale(1.02);
+        background-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 5px 5px 5px lightblue,-5px -5px 5px lightblue;
+}
+.listUser h1{
+    margin:10px 60px;
+    font-size: 20px;
+    text-align: right;
+    font-family: 'fun', serif;
+}
+#savedDis ul li .listUser p{
+    position: absolute;
+    top: 115px;
+    left: 198px;
+    color: crimson;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'fun', serif;
+}
+@media only screen and (max-width: 768px) {
+    #containerUser{
+        width: 768px;
+        margin: auto;
+    }
+    #nameUser{
+        color: black;
+        font-size: 20px;
+        text-align: right;
+        margin: 20px 30px;
+        font-family: "fun";
+    }
+    #lastNameUser{
+        color: black;
+        font-size: 20px;
+        text-align: right;
+        margin: 20px 30px;
+        font-family: "fun";
+    }
+    #infoUser{
+        width: 768px;
+        height: 190px;
+        background-color: lightgray;
+        margin: auto;
+        border: 1px solid gray;
+    }
+    #first-childUser{
+        width: 300px;
+        height: 190px;
+        background-color: white;
+        float: right;
+    }
+    #first-childUser #formUser{
+        margin-top: -15px
+    }
+    #first-childUser #formUser input{
+        float: right;
+        margin: 6px 20px;
+        text-align: right;
+        width: 220px;
+        border: none;
+        font-size: 22px;
+    }
+    #first-childUser #formUser button{
+        background-color:white;
+        border: none;
+        font-size: 16px;
+        color: #ba301b;
+        margin-top: -10px;
+        margin-left: 140px;
+        margin-bottom: 10px;
+        border: 1px solid gray;
+    }
+    #savedDis{
+        width: 768px;
+        margin: auto;
+        background-color: whitesmoke;
+        border:1px solid rgba(53, 43, 43, 0.45);
+    }
+    #savedDis h1{
+        text-align: center;
+        color: black;
+        margin:10px auto;
+        font-size: 22px;
+        font-family: 'fun', serif;
+    }
+    #savedDis ul{
+        width: 726px;
+        padding-left: 40px;
+        display:inline-block;
+        background-color: lightgrey;
+        margin-bottom: 20px;
+    }
+    #savedDis ul li{
+        width:300px;
+        height: 120px;
+        display: inline-block;
+        margin-left:40px;
+        margin-top: 30px;
+    }
+    #savedDis ul li .listUser{
+        width: 333px;
+        background-color:whitesmoke;
+        height: inherit;
+        background-size: cover;
+        border-radius: 5px;
+        position: relative;
+    }
+    #savedDis ul li .listUser img{
+        width: 120px;
+        height: 120px;
+        border-radius: 5px;
+        padding-left: 10px;
+        float: right;
+    }
+    #savedDis ul li{
+        transition: all 0.5s ease;
+    }
+    #savedDis ul li:hover{
+            transform: scale(1.02);
+            background-color: rgba(0, 0, 0, 0.08);
+        box-shadow: 5px 5px 5px lightblue,-5px -5px 5px lightblue;
+    }
+    #savedDis ul li .listUser h1{
+        margin:29px 60px;
+        font-size: 15px;
+        text-align: right;
+        font-family: 'fun', serif;
+    }
+    #savedDis ul li .listUser p{
+        position: absolute;
+        top: 90px;
+        left: 109px;
+        color: crimson;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'fun', serif;
+    }
+}
+    @media only screen and (max-width: 425px) {
+        #containerUser{
+            width: 425px;
+            margin: auto;
+        }
+        #nameUser{
+            color: black;
+            font-size: 20px;
+            text-align: right;
+            margin: 20px 30px;
+            font-family: "fun";
+        }
+        #lastNameUser{
+            color: black;
+            font-size: 20px;
+            text-align: right;
+            margin: 20px 30px;
+            font-family: "fun";
+        }
+        #infoUser{
+            width: 425px;
+            height: 190px;
+            background-color: lightgray;
+            margin: auto;
+            border: 1px solid gray;
+        }
+        #first-childUser{
+            width: 425px;
+            height: 190px;
+            background-color: white;
+            float: right;
+        }
+        #first-childUser #formUser{
+            margin-top: -15px
+        }
+        #first-childUser #formUser input{
+            float: right;
+            margin: 6px 20px;
+            text-align: right;
+            width: 220px;
+            border: none;
+            font-size: 22px;
+        }
+        #first-childUser #formUser button{
+            background-color:white;
+            border: none;
+            font-size: 16px;
+            color: #ba301b;
+            margin-top: -10px;
+            margin-left: 268px;
+            margin-bottom: 10px;
+            border: 1px solid gray;
+        }
+        #savedDis{
+            width: 385px;
+            height: 380px;
+            margin: auto;
+            background-color: whitesmoke;
+            border:1px solid rgba(53, 43, 43, 0.45);
+        }
+        #savedDis h1{
+            text-align: center;
+            color: black;
+            margin:10px auto;
+            font-size: 22px;
+            font-family: 'fun', serif;
+        }
+        #savedDis ul{
+            width: 345px;
+            height: 380px;
+            display:inline-block;
+            background-color: lightgrey;
+            margin-bottom: 20px;
+            margin-left: 0px;
+        }
+        #savedDis ul li{
+            width:300px;
+            height: 120px;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        #savedDis ul li .listUser{
+            width: 333px;
+            background-color:whitesmoke;
+            height: inherit;
+            background-size: cover;
+            border-radius: 5px;
+            position: relative;
+        }
+        #savedDis ul li .listUser img{
+            width: 120px;
+            height: 120px;
+            border-radius: 5px;
+            padding-left: 10px;
+            float: right;
+        }
+        #savedDis ul li{
+            transition: all 0.5s ease;
+        }
+        #savedDis ul li:hover{
+                transform: scale(1.02);
+                background-color: rgba(0, 0, 0, 0.08);
+            box-shadow: 5px 5px 5px lightblue,-5px -5px 5px lightblue;
+        }
+        #savedDis ul li .listUser h1{
+            margin:29px 60px;
+            font-size: 15px;
+            text-align: right;
+            font-family: 'fun', serif;
+        }
+        #savedDis ul li .listUser p{
+            position: absolute;
+            top: 90px;
+            left: 109px;
+            color: crimson;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: 'fun', serif;
+        }
+    }

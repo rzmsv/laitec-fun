@@ -9,11 +9,12 @@ router.post('/signup',(req,res)=>{
     var lastname = req.body.lastname
     var user = req.body.user
     var email = req.body.email
+    var password = req.body.password
     if(!res){
         res.redirect('/')
     }
     res.redirect('signup')
-    sql.create(name,lastname,user,email)
+    sql.create(name,lastname,user,email,password)
 })
 
 module.exports = router

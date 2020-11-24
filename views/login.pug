@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-html(lang="en")
-     head
-          meta(charset="UTF-8")
-          meta(name="viewport", content="width=device-width, initial-scale=1.0")
-          title #{title}
-     body
-          form(action="/login" method="post")
-               label(for="email") E-mail
-               input(type="email" name="email" placeholder="Please enter your EMAIL")
-               button(type="submit") Click
-          
-          if isAuth
-               h1 w
-          else
-               h1 s
+extend layoutes/mainlayoute.pug
+block style
+block body
+     .container
+          .login
+               h1#defLogin ورود به حساب کاربری
+               form(id="formLogin" action="/login" method="post")
+                    input(id="userLogin" type="text" name="username" placeholder=" نام کاربری")
+                    input(id="passwordLogin" type="password" name="password" placeholder="رمز عبور")
+                    br
+                    a(id="aLogin" href="http://localhost:3000/signup") حساب کاربری ندارید؟ ثبت نام کنید
+                    button#btnLogin ورود
+block footer

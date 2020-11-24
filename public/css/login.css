@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(182, 182, 182);
+}
+.container{
+    width: 700px;
+    margin: auto;
+    height: 520px;
+    background-color: rgb(182, 182, 182);
+}
+.login #defLogin{
+    margin: 30px auto;
+    font-size: 30px;
+    color: #f34242;
+    text-align: center;
+    font-family: "fun";
+    font-weight: bold;
+}
+#formLogin input{
+    width: 550px;
+    height: 40px;
+    margin: 10px auto;
+    text-align: right;
+    padding: 10px;
+    color: rgb(65, 64, 64);
+    border:1px solid rgb(236, 209, 138);
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: "fun";
+}
+.login #formLogin{
+    margin: 10px auto;
+}
+.login #formLogin #aLogin{
+    color: #097694;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 280px;
+    text-decoration: none;
+}
+
+#formLogin #btnLogin{
+    border-radius: 10px;
+    background-color: #01BFF3;
+    color: white;
+    width: 560px;
+    margin: 50px 0 0 5px;
+    font-family: "fun";
+}
+
+@media only screen and (max-width: 425px){
+    .container{
+        width: 400px;
+        margin: auto;
+        height: 539px;
+        background-color: rgb(182, 182, 182);
+    }
+    .login #defLogin{
+        margin: 30px auto;
+        font-size: 30px;
+        color: #f34242;
+        text-align: center;
+        font-family: "fun";
+    }
+    #formLogin input{
+        width: 350px;
+        height: 40px;
+        margin: 10px auto;
+        text-align: right;
+        padding: 10px;
+        color: rgb(65, 64, 64);
+        border:1px solid rgb(236, 209, 138);
+        border-radius: 10px;
+        font-size: 18px;
+        font-family: "fun";
+    }
+    .login #formLogin{
+        margin: 10px auto;
+    }
+    .login #formLogin #aLogin{
+        color: #0084a8;
+        margin-left: 106px;
+        text-decoration: none;
+        font-family: "fun";
+    }
+    /* .login form label{
+        color: #399fba;
+        font-size: 15px;
+    } */
+    #formLogin #btnLogin{
+        border-radius: 10px;
+        background-color: #01BFF3;
+        color: white;
+        width: 350px;
+        margin: 90px 0 0 25px;
+        font-family: "fun";
+    }
+}

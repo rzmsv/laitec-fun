@@ -64,8 +64,8 @@ body{
     -webkit-box-shadow: -1px 0px 10px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 0px 10px -4px rgba(0,0,0,0.75);
     box-shadow: -1px 0px 10px -4px rgba(0,0,0,0.75);
-    /* border-radius: 10px; */
-    /* border-radius: 25px!important; */
+    border-radius: 10px;
+    border-radius: 25px!important;
 }
 
 #popular-offers ul li img{
@@ -226,7 +226,7 @@ body{
     }
     #popular-offers ul{
     }
-    #popular-offers ul a li{
+    #popular-offers ul li{
         position: relative;
         display: inline-block;
         background-color: white;
@@ -236,7 +236,7 @@ body{
         box-sizing: border-box;
         border-radius: 20px 20px 0 0;
     }
-    #popular-offers ul a li img{
+    #popular-offers ul li img{
         width: 327px;
         height: 250px;
         border-radius: 20px 20px 0 0
@@ -392,18 +392,18 @@ body{
     #popular-offers ul{
         margin-left: 20px;
     }
-    #popular-offers ul a li{
+    #popular-offers ul li{
     position: relative;
     display: inline-block;
     background-color: white;
-    width: 327px;
+    width: 343px;
     height: 375px;
     margin: 28px;
     box-sizing: border-box;
     border-radius: 20px 20px 0 0;
     }
-    #popular-offers ul a li img{
-    width: 327px;
+    #popular-offers ul li img{
+    width: 343px;
     height: 250px;
     border-radius: 20px 20px 0 0
     }

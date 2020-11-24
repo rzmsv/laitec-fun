@@ -4,6 +4,17 @@ CREATE TABLE users (
      lastname VARCHAR(255) NOT NULL DEFAULT "Lastname is empty!",
      user VARCHAR(255) UNIQUE NOT NULL,
      email VARCHAR(255) UNIQUE NOT NULL,
+     password VARCHAR(255) NOT NULL,
+     created_at TIMESTAMP DEFAULT NOW() 
+      );
+
+CREATE TABLE admin (
+     id INT AUTO_INCREMENT PRIMARY KEY,
+     name VARCHAR(255) NOT NULL,
+     lastname VARCHAR(255) NOT NULL,
+     user VARCHAR(255) UNIQUE NOT NULL,
+     email VARCHAR(255) UNIQUE NOT NULL,
+     password VARCHAR(255) NOT NULL,
      created_at TIMESTAMP DEFAULT NOW() 
       );
 
