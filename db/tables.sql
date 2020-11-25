@@ -5,6 +5,7 @@ CREATE TABLE users (
      user VARCHAR(255) UNIQUE NOT NULL,
      email VARCHAR(255) UNIQUE NOT NULL,
      password VARCHAR(255) NOT NULL,
+     admin VARCHAR(4) ,
      created_at TIMESTAMP DEFAULT NOW() 
       );
 
@@ -16,20 +17,6 @@ CREATE TABLE admin (
      email VARCHAR(255) UNIQUE NOT NULL,
      password VARCHAR(255) NOT NULL,
      created_at TIMESTAMP DEFAULT NOW() 
-      );
-
-
-CREATE TABLE offers (
-     id INT AUTO_INCREMENT,
-     category VARCHAR(255) NOT NULL,
-     name VARCHAR(255) NOT NULL,
-     description VARCHAR(255) NOT NULL,
-     telephone INT NOT NULL,
-     image VARCHAR(255) NOT NULL,
-     address VARCHAR(255) NOT NULL,
-     off DECIMAL(3,1),
-     created_at TIMESTAMP DEFAULT NOW(),
-     PRIMARY KEY (id) 
       );
 
 

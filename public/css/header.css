@@ -19,6 +19,20 @@
      margin-left: 20px;
      margin-top: 5px;
  }
+#exit button{
+    width: 100px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 10px 10px 10px;
+    color: #7D8B99;
+    background-color: #282828;
+    border: none;
+    font-family: "fun";
+ }
+ #exit button:hover{
+    color: #E2D69F;
+    transition: all 0.5s ease;
+}
  .nav ul li{
      display: inline-block;
      height: 40px;
@@ -113,10 +127,21 @@
           display: inline-block;
           height: 30px;
       }
+      #exit button{
+        width: 100px;
+        height: 10px;
+        text-decoration: none;
+        display: inline-block;
+        margin: -10px 10px 10px 10px;
+        color: #7D8B99;
+        background-color: #282828;
+        border: none;
+        font-family: "fun";
+     }
       .nav ul li a{
           text-decoration: none;
           display: inline-block;
-          margin: 5px 5px 5px 5px;
+          margin: 3px 5px 5px 5px;
           color: #7D8B99;
           font-size: 15px;
           font-family: "fun";

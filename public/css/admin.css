@@ -8,17 +8,21 @@
      margin: auto;
 }
 #adminName{
-     float: right;
+     float: left;
      display: inline;
      margin: 15px;
-     font-size: 20px;
+     font-size: 25px;
      font-family: "fun";
+     font-weight: bold;
+     color: black;
 }
 #adminUser{
-     float: right;
+     font-weight: normal;
+     color: black;
+     float: left;
      display: block;
      margin: 15px;
-     font-size: 25px;
+     font-size: 20px;
      font-family: "fun";
 }
 #adminbox{
@@ -74,18 +78,20 @@
           margin: auto;
      }
      #adminName{
-          float: right;
+          float: left;
           display: inline;
           margin: 15px 30px;
           font-size: 20px;
           font-family: "fun";
+          font-weight: bold;
      }
      #adminUser{
-          float: right;
+          float: left;
           display: block;
           margin: 15px 30px;
-          font-size: 25px;
+          font-size: 15px;
           font-family: "fun";
+          font-weight: normal;
      }
      #adminbox{
           border-top: black 2px solid ;
@@ -137,18 +143,20 @@
           margin: auto;
      }
      #adminName{
-          float: right;
+          float: left;
           display: inline;
           margin: 15px;
           font-size: 20px;
           font-family: "fun";
+          font-weight: bolder;
      }
      #adminUser{
-          float: right;
+          float: left;
           display: block;
           margin: 15px;
-          font-size: 25px;
+          font-size: 15px;
           font-family: "fun";
+          font-weight: normal;
      }
      #adminbox{
           border-top: black 2px solid ;

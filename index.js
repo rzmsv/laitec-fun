@@ -7,6 +7,7 @@ const morgan = require('morgan')
 const logger = require('./utils/logger')
 const bodyParser = require('body-parser')
 const session = require('express-session')
+const MySQLStore = require('express-mysql-session')(session);
 const path = require('path')
 const pug = require('pug')
 const app = express()
@@ -20,7 +21,7 @@ const education = require('./routes/education')
 const detail = require('./routes/details')
 const user = require('./routes/user')
 const admin = require('./routes/admin')
-const ErrorPage = require('./routes/error')
+const ErrorPage = require('./routes/error');
 
 // create logs for morgan
 var accessLogStream = fs.createWriteStream(path.join(__dirname, './logs/morganLogs.log'), { flags: 'a' })
@@ -30,11 +31,26 @@ app.set('view engine','pug')
 app.set('views','views')
 // middleware
 app.use(cookieParser())
-app.use(session({
-    secret : 'my secret',
-    resave : false,
-    saveUninitialized : false
-}))
+ var options = {
+        host: 'localhost',
+        port: 3306,
+        user: 'laitec',
+        password: 'Reza1989@',
+        database: 'laitec'
+    };
+     
+var sessionStore = new MySQLStore(options);
+
+async function ses (){
+   await app.use(session({
+        key: 'session_cookie_name',
+        secret: 'session_cookie_secret',
+        store: sessionStore,
+        resave: false,
+        saveUninitialized: false
+    }));
+}
+ses()
 app.use(morgan('combined', { stream: accessLogStream }))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))

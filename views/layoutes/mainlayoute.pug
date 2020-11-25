@@ -29,13 +29,19 @@ html(lang="en")
         header
             div.nav
                 ul
-                    li
-                        a(href="http://localhost:3000/signup" class="modal") ثبت نام
+                    if loggedin || signed
+                        li
+                            form(id="exit" action="/", method="post")
+                                button خروج
+                    else
+                        li
+                            a(href="http://localhost:3000/signup" class="modal") ثبت نام
                         
-                    li
-                        a(href="#" class="modal") /
-                    li
-                        a(href="http://localhost:3000/login" class="modal") ورود
+                        li
+                            a(href="#" class="modal") /
+                        li
+                            a(href="http://localhost:3000/login" class="modal") ورود
+                
                 a(href="http://localhost:3000")
                     img(id="nav-logo" src="./image/nav_logo.png" alt="logo")
         div.clearfix

@@ -39,6 +39,7 @@ module.exports.loginUser= (user,password)=>{
           })
      })
 }
+
 module.exports.insertOffersTable = (category,main_pic,name,off,address,image1,image2,image3,description,timeout)=>{
      var offers = {
           category : category,
