@@ -5,6 +5,9 @@
 #containerUser{
     width: 1024px;
     margin: auto;
+    margin-top: 10px;
+    -webkit-box-shadow: 2px 5px 30px 8px #000000; 
+    box-shadow: 2px 5px 30px 8px #000000;
 }
 #nameUser{
     color: black;

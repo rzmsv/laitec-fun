@@ -4,17 +4,15 @@ const signUpPage = require('../controller/main')
 const sql= require('../db/db_connection');
 
 router.get('/signup',signUpPage.signup)
-router.post('/signup',(req,res)=>{
+router.post('/signup',(req,res,next)=>{
     var name = req.body.name
     var lastname = req.body.lastname
     var user = req.body.user
     var email = req.body.email
     var password = req.body.password
-    if(!res){
-        res.redirect('/')
-    }
-    res.redirect('signup')
+    
     sql.create(name,lastname,user,email,password)
+    res.redirect('/')
 })
 
 module.exports = router

@@ -42,7 +42,7 @@ app.use(cookieParser())
 var sessionStore = new MySQLStore(options);
 
 async function ses (){
-   await app.use(session({
+    await app.use(session({
         key: 'session_cookie_name',
         secret: 'session_cookie_secret',
         store: sessionStore,
@@ -66,9 +66,11 @@ app.use(signUp)
 app.use(login)
 app.use(detail)
 app.use(user)
-
-
-app.use(ErrorPage.error)
+app.get('/500',ErrorPage.get500)
+app.use(ErrorPage.get404)
+app.use((error,req,res,next)=>{
+    res.status(500).render('500',{title : 'Error'})
+})
 //.....
 const port = process.env.PORT || 3000
 try {

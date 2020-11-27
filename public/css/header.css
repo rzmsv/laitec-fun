@@ -26,8 +26,11 @@
     margin: 0px 10px 10px 10px;
     color: #7D8B99;
     background-color: #282828;
-    border: none;
+    border: solid 1px #202020;
     font-family: "fun";
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 4px 30px -9px #000000; 
+    box-shadow: 2px 4px 30px -9px #000000;
  }
  #exit button:hover{
     color: #E2D69F;
