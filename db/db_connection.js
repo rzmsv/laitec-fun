@@ -1,5 +1,6 @@
 const mysql = require('mysql2');
 
+
 const connection = mysql.createConnection({
           host: 'localhost',
           user: 'laitec',
@@ -9,7 +10,7 @@ const connection = mysql.createConnection({
 
      
 
-module.exports.create = (name,lastname,user,email,password)=>{
+module.exports.create = (name,lastname,user,email,password,callback)=>{
      var person = {
           name : name,
           lastname: lastname,
@@ -17,15 +18,13 @@ module.exports.create = (name,lastname,user,email,password)=>{
           email : email,
           password : password
      }
-          connection.query(
-               'INSERT INTO users SET ?',person,function(err,res){
-                    if (err){
-                         console.log('err')
-                    }
-                    else{
-                         console.log(res)
-                    }
-               })
+          return new Promise((resolve,reject)=>{
+               connection.query(
+                    'INSERT INTO users SET ?',person,function(err,res){
+                         resolve(res)
+                         reject(err)
+                    })
+          })
 
 }
 module.exports.loginUser= (user,password)=>{
@@ -147,5 +146,15 @@ module.exports.deleteOffer = (name)=>{
                console.log(err)
           }
           console.log(res)
+     })
+}
+module.exports.detail = (id)=>{
+     var id = id
+     return new Promise((resolve,reject)=>{
+          var readById = 'SELECT * FROM offers WHERE id=?;' 
+          connection.query(readById,id,(err,res)=>{
+               resolve(res)
+               reject(err)
+          })
      })
 }

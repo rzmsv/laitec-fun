@@ -8,7 +8,7 @@ block body
           h1 بیشترین تخفیفات
           ul
                each v,k in most               
-                    a(href="#")    
+                    a(href="http://localhost:3000/"+v.id+"")    
                          li
                               div.list
                                    img(src=v.main_pic alt="")
@@ -23,7 +23,7 @@ block body
           ul
                each v,k in all              
                     li    
-                         a(href="#")
+                         a(href="http://localhost:3000/"+v.id+"")
                               div.list
                                    div.list
                                    img(src=v.main_pic alt="")

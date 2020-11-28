@@ -130,16 +130,14 @@ body{
     color: #282828;
 }
 .main-offers{
-    position: relative;
     height: 400px;
-}
-.bg-main-offers{
-    height: 350px;
     background-color: grey;
 }
-.main-offers{
-    width: 1024px;
+.bg-main-offers{
     margin: auto;
+    height: 350px;
+    width: 1024px;
+    background-color: grey;
 }
 .main-offers h1{
     position: relative;
@@ -152,8 +150,7 @@ body{
     font-family: "fun";
 }
 .main-offers ul{
-    margin-top: 10px;
-    margin-left: -10px;
+    margin-left: -5px;
 }
 .main-offers a li{
     width: 300px;

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style.
+            @font-face {
+            font-family: 'fun';
+            src: url('../fonts/fonts/eot/IRANSansWeb.eot'); /* IE9 Compat Modes */
+            src: url('../fonts/fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/fonts/woff2/IRANSansWeb.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/fonts/woff/IRANSansWeb.woff') format('woff'), /* Pretty Modern Browsers */
+            url('../fonts/fonts/ttf/IRANSansWeb.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/fonts/eot/IRANSansWeb.svg#svgFontName') format('svg'); /* Legacy iOS */
+            }
+        link(rel="stylesheet", href="../css/reset.css")
+        link(rel="stylesheet", href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="../css/header.css")
+        link(rel="stylesheet", href="../css/detail.css")
+        link(rel="stylesheet", href="../css/footer.css")
+        title #{title}
+    body
+        header
+            div.nav
+                ul
+                    if loggedin || signed
+                        li
+                            form(id="exit" action="/", method="post")
+                                button خروج
+                    else
+                        li
+                            a(href="http://localhost:3000/signup" class="modal") ثبت نام
+                        
+                        li
+                            a(href="#" class="modal") /
+                        li
+                            a(href="http://localhost:3000/login" class="modal") ورود
+                
+                a(href="http://localhost:3000")
+                    img(id="nav-logo" src="../image/nav_logo.png" alt="logo")
+    .container
+        .parent
+            .child
+                img(src="../"+image , alt="") 
+                //- .outer-wrapper
+                //-         .s-wrap
+                //-             .s-type(role="slider")
+                //-             input( type="radio" name="slider" id="s-1")
+                //-             input( type="radio" name="slider" id="s-2")
+                //-             input( type="radio" name="slider" id="s-3")
+                //-             input( type="radio" name="slider" id="s-4")
+                //-             input( type="radio" name="slider" id="s-5")
+                //-             ul.s-content
+                //-             li.s-item.s-item-1
+                //-             li.s-item.s-item-2
+                //-             li.s-item.s-item-3
+                //-             li.s-item.s-item-4
+                //-             li.s-item.s-item-5
+                //-             .s-control1
+                //-             label.s-c-1(for="s-1")
+                //-             label.s-c-2(for="s-2")
+                //-             label.s-c-3(for="s-3")
+                //-             label.s-c-4(for="s-4")
+                //-             label.s-c-4(for="s-4")
+                //-             .s-nav
+                //-             label.s-nav-1.right(for="s-2")
+                //-             label.s-nav-2.left(for="s-1")
+                //-             label.s-nav-2.right(for="s-3")
+                //-             label.s-nav-2.left(for="s-2")
+                //-             label.s-nav-2.right(for="s-4")
+                //-             label.s-nav-2.left(for="s-3")
+                //-             label.s-nav-2.right(for="s-5")
+                //-             label.s-nav-2.left(for="s-4")
+                h4 #{db.off}% تخفیف 
+                h1 #{db.name}
+                p.p  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                .information
+                    .line1
+                        p
+                        .blue نشانی
+                        p #{db.address}
+                        
+                    .line2
+                        p
+                        .blue شماره تماس
+                        p #{db.telephone}
+                    .line3
+                        p
+                        .blue مدت اعتبار
+                        p #{db.timeout}
+                    .input-box 
+                        input(type="text")
+                        button گرفتن کد تخفیف
+    .clearfix
+     div#footer
+        div.footer
+            img(src="../image/logo.png" alt="logo")
+            h2 ارتباط با ما
+            h3 مجموعه فان- تخفیفات و سرگرمی لایتک
+            ul
+                li
+                    i(class="fa fa-phone" aria-hidden="true")
+                    p تلفن: ۰۲۱۶۶۰۸۶۰۱۹ - ۰۲۱۶۶۰۳۵۱۲۵ -۰۲۱۶۶۰۱۳۶۴۷
+                li
+                    i(class="fa fa-fax" aria-hidden="true")
+                    p فکس ۰۲۱۸۹۷۸۳۷۵۶
+                li    
+                    i(class="fa fa-envelope-o" aria-hidden="true")
+                    p ایمیل: into@laitec.ir - edu@laitec.ir
+        div.sochial-media1
+            div.sochial-media2
+                ul
+                    li
+                        a(href="#")
+                            i(class="fa fa-facebook" aria-hidden="true")
+                    li
+                        a(href="#")
+                            i(class="fa fa-twitter" aria-hidden="true")
+                    li
+                        a(href="#")
+                            i(class="fa fa-instagram" aria-hidden="true")
+    div.clearfix   
+    
+    

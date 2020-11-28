@@ -8,10 +8,12 @@
      background-color: #282828;
  }
  .nav{
+    border-top: 2px solid #8D2210;
      height:40px;
      width: 1024px;
      background-color:#282828;
      margin: auto;
+     margin-top: -2px;
  }
  
  .nav ul{
@@ -77,6 +79,7 @@
           border-left:solid 1px #B7B7B7;
           background-color:#282828;
           margin: auto;
+          margin-top: -2px;
       }
       
       .nav ul{
@@ -120,6 +123,7 @@
           border-left:solid 1px #B7B7B7;
           background-color:#282828;
           margin: auto;
+          margin-top: -1px;
       }
       
       .nav ul{

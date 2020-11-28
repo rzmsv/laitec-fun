@@ -12,7 +12,14 @@ router.post('/signup',(req,res,next)=>{
     var password = req.body.password
     
     sql.create(name,lastname,user,email,password)
-    res.redirect('/')
+    
+    sql.create()
+    .then((res)=>{
+        console.log(res)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
 })
 
 module.exports = router

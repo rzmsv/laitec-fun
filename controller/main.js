@@ -132,9 +132,6 @@ module.exports.signup =(req,res,next)=>{
     signUp()
 }
 
-
-
-
 // login
 module.exports.login =(req,res,next)=>{
  var loggedIn = req.session.userLoggedIn
@@ -206,18 +203,22 @@ module.exports.postLogin = (req,res,next)=>{
 }
 
 // ....................
-
-// ..................
-
+// Detail
 module.exports.detail = (req,res,next)=>{
-    var loggedIn = req.session.userLoggedIn
-    var signed = req.session.adminLoggedIn
-    try {
-        res.render('detail',{title : 'Detail Page',loggedin : loggedIn,signed : signed})
-    } catch (error) {
-        res.status(404).render('/404')
+    var id = req.params.id
+    async function detailOne(){
+        try {
+            var one = await sql.detail(id)
+            res.render('detail',{db:one[0],image:one[0].main_pic})
+        } catch (error) {
+            next(new Error(error))
+        }
     }
+    detailOne()
 }
+// ..................
+// USER ....
+
 module.exports.user = (req,res,next)=>{
     var userId = req.session.displayId
     var userName = req.session.displayuser
