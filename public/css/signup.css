@@ -6,15 +6,16 @@ body{
     margin: auto;
 }
 #signup #abc{
-    margin: 30px auto;
+    margin: 40px auto;
     font-size: 30px;
     color: #f34242;
     text-align: center;
+    font-weight: bold;
     font-family: "fun";
 }
 form input{
-    width: 600px;
-    height: 40px;
+    width: 550px;
+    height: 25px;
     margin: 10px auto;
     text-align: right;
     padding: 10px;
@@ -27,25 +28,32 @@ form input{
     margin: 10px auto;
 }
 #signup form a{
-    color: #097694;
+    position: relative;
+    color: #0307dd;
     font-size: 20px;
-    font-weight: bold;
-    margin-left: 339px;
+    left: 158px;
+    top: 13px;
+    font-weight: normal;
     text-decoration: none;
+    font-family: "fun";
 }
 #signup form label{
     color: #0e3e4b;
     font-size: 15px;
 }
 #signup form button{
+    border: none;
+    height: 45px;
+    font-size: 20px;
     margin-top: -10px;
     border-radius: 10px;
     background-color: #01BFF3;
     color: white;
-    width: 600px;
+    width: 580px;
     margin-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 27px;
     margin-left: 5px;
+    font-family: "fun";
 }
 
 @media only screen and (max-width: 425px){
@@ -76,9 +84,11 @@ form input{
         margin: 10px auto;
     }
     #signup form a{
-        color: #0084a8;
-        margin-left: 123px;
+        position: relative;
         text-decoration: none;
+        font-size: 22px;
+        left: 48px;
+        top: 26px;
         font-family: "fun";
     }
     #signup form label{

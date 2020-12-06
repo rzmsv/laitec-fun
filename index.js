@@ -63,9 +63,10 @@ app.use(coffe)
 app.use(sport)
 app.use(education)
 app.use(signUp)
+app.use(user)
 app.use(login)
 app.use(detail)
-app.use(user)
+
 app.get('/500',ErrorPage.get500)
 app.use(ErrorPage.get404)
 app.use((error,req,res,next)=>{

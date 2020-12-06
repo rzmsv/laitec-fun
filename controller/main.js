@@ -5,10 +5,12 @@ const sql = require('../db/db_connection')
 module.exports.home = (req,res,next)=>{
     var loggedIn = req.session.userLoggedIn
     var signed = req.session.adminLoggedIn
+    var name = req.session.displayname
     try {
         function read (read){
+            var name = req.session.displayname
             return new Promise((resolve,reject)=>{
-            resolve(res.render('home',{title : 'Laitec Fun Page',a: read,loggedin : loggedIn,signed : signed}))
+            resolve(res.render('home',{title : 'Laitec Fun Page',name : name,a: read,loggedin : loggedIn,signed : signed}))
             })
         }
     } catch (error) {
@@ -30,11 +32,12 @@ display()
 module.exports.coffe = async (req,res,next)=>{
     var loggedIn = req.session.userLoggedIn
     var signed = req.session.adminLoggedIn
+    var name = req.session.displayname
     function coffe (m,a){
         try {
             return new Promise((resolve,reject)=>{
                 // for (i=0;i<m.length;i++)
-                resolve(res.render('coffe',{title : 'Restorant & Coffe Page',category : 'رستوران و کافی شاپ',most : m ,all:a,loggedin : loggedIn,signed : signed}))
+                resolve(res.render('coffe',{title : 'Restorant & Coffe Page',category : 'رستوران و کافی شاپ',most : m ,all:a,loggedin : loggedIn,signed : signed,name:name}))
             })
         } catch (error) {
             res.status(404).render('/404')
@@ -59,11 +62,12 @@ displayCoffe()
 module.exports.sport = async (req,res,next)=>{
     var loggedIn = req.session.userLoggedIn
     var signed = req.session.adminLoggedIn
+    var name = req.session.displayname
     try {
         function sport (m,a){
             return new Promise((resolve,reject)=>{
                 // for (i=0;i<m.length;i++)
-                resolve(res.render('sport',{title : 'Sport Page',category :'مجتمع ورزشی',most : m ,all:a,loggedin : loggedIn,signed : signed}))
+                resolve(res.render('sport',{title : 'Sport Page',category :'مجتمع ورزشی',most : m ,all:a,loggedin : loggedIn,signed : signed,name:name}))
             })
         }
     } catch (error) {
@@ -87,11 +91,12 @@ displaySport()
 module.exports.education = async (req,res,next)=>{
     var loggedIn = req.session.userLoggedIn
     var signed = req.session.adminLoggedIn
+    var name = req.session.displayname
     try {
         function education (m,a){
             return new Promise((resolve,reject)=>{
                 // for (i=0;i<m.length;i++)
-                resolve(res.render('education',{title : 'Education Page',category :'تخفیفات آموزشی',most : m ,all:a,loggedin : loggedIn,signed : signed}))
+                resolve(res.render('education',{title : 'Education Page',category :'تخفیفات آموزشی',most : m ,all:a,loggedin : loggedIn,signed : signed,name:name}))
             })
         }
     } catch (error) {
@@ -167,7 +172,7 @@ module.exports.postLogin = (req,res,next)=>{
             req.session.displayuser = one[0].user
             req.session.displaylastname = one[0].lastname
             req.session.displayId = one[0].id
-        if (one[0].admin !== 'yes' ){
+        if (one[0].admin == 'no'){
             res.cookie('Cookies',req.cookies,{ expires: new Date(Date.now() + 1000), httpOnly: true})
             req.session.userLoggedIn = true
             return await res.redirect('/user')
@@ -179,6 +184,7 @@ module.exports.postLogin = (req,res,next)=>{
         }
         } catch (error) {
             res.redirect('/login')
+            next()
         }
     }
     async function getUser (one){
@@ -206,10 +212,13 @@ module.exports.postLogin = (req,res,next)=>{
 // Detail
 module.exports.detail = (req,res,next)=>{
     var id = req.params.id
+    var loggedIn = req.session.userLoggedIn
+    var signed = req.session.adminLoggedIn
+    var name = req.session.displayname
     async function detailOne(){
         try {
             var one = await sql.detail(id)
-            res.render('detail',{db:one[0],image:one[0].main_pic})
+            res.render('detail',{db:one[0],image:one[0].main_pic,loggedin : loggedIn,signed : signed,name:name})
         } catch (error) {
             next(new Error(error))
         }
@@ -220,16 +229,15 @@ module.exports.detail = (req,res,next)=>{
 // USER ....
 
 module.exports.user = (req,res,next)=>{
-    var userId = req.session.displayId
     var userName = req.session.displayuser
     var userlastname = req.session.displaylastname
     var loggedIn = req.session.userLoggedIn
     async function user (){
         try {
-            if (loggedIn == 1){
+            if (loggedIn == true){
                 return await res.render('user',{title :`Dear ${userName} welcome to User Page`,loggedin : loggedIn,name : userName,lastname:userlastname})
             }
-            await res.redirect('/')
+            res.redirect('/')
         } catch (error) {
             res.status(404).render('/404')
         }
@@ -242,10 +250,10 @@ module.exports.admin = (req,res,next)=>{
     var userUser = req.session.displayuser
     async function admin (){
         try {
-            if(signed == 1){
+            if(signed == true){
                 return await res.render('admin',{title :`Dear ${userUser} welcome to Admin Page`,loggedin : signed,name : userName,user:userUser})
             }
-            await res.redirect('/')
+            res.redirect('/')
         } catch (error) {
             res.status(404).render('/404')
         }

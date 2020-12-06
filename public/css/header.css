@@ -38,6 +38,11 @@
     color: #E2D69F;
     transition: all 0.5s ease;
 }
+ .welcome{
+     color: #7D8B99;
+     font-family: "fun";
+     margin: 10px 10px 10px 10px;
+ }
  .nav ul li{
      display: inline-block;
      height: 40px;
