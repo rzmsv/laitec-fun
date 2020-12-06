@@ -182,9 +182,11 @@ module.exports.postLogin = (req,res,next)=>{
             req.session.adminLoggedIn = true
             return await res.redirect('/admin')
         }
+        else{
+            return await res.redirect('/login')
+        }
         } catch (error) {
             res.redirect('/login')
-            next()
         }
     }
     async function getUser (one){
