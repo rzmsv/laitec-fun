@@ -13,7 +13,7 @@ block body
                          a(href="http://localhost:3000/"+v.id+"")
                               .list
                                    img(src=v.main_pic , alt="")
-                                   p#offers-in-pop= v.off
+                                   p#offers-in-pop= `${v.off}%` 
                                    h2= v.name
                                    i(class="fa fa-map-marker" aria-hidden="true") 
                                    strong= v.address
@@ -27,17 +27,17 @@ block body
                          li
                               div
                                    img(src="gif/sport1.gif", alt="sport gif")
-                                   p مجموعه ورزشی
+                                   p.p1 مجموعه ورزشی
                     a(href="http://localhost:3000/education")
                          li
                               div
                                    img(src="gif/course1.gif", alt="sport gif")
-                                   p دوره آموزشی
+                                   p.p2 دوره آموزشی
                     a(href="http://localhost:3000/coffe")
                          li
                               div
                                    img(src="gif/cofe1.gif", alt="sport gif")
-                                   p رستوران و کافی شاپ
+                                   p.p3 رستوران و کافی شاپ
 
 
 block footer

@@ -25,7 +25,7 @@
     width: 100px;
     text-decoration: none;
     display: inline-block;
-    margin: 0px 10px 10px 10px;
+    margin: 0px 10px 10px 0px;
     color: #7D8B99;
     background-color: #282828;
     border: solid 1px #202020;
@@ -50,7 +50,7 @@
  .nav ul li a{
      text-decoration: none;
      display: inline-block;
-     margin: 10px 10px 10px 10px;
+     margin: 7px 10px 10px 0px;
      color: #7D8B99;
      font-family: "fun";
  }
@@ -98,7 +98,7 @@
       .nav ul li a{
           text-decoration: none;
           display: inline-block;
-          margin: 10px 5px 10px 5px;
+          margin: 7px 5px 10px 5px;
           color: #7D8B99;
           font-family: "fun";
       }
@@ -153,7 +153,7 @@
       .nav ul li a{
           text-decoration: none;
           display: inline-block;
-          margin: 3px 5px 5px 5px;
+          margin: 3px 5px 5px 10px;
           color: #7D8B99;
           font-size: 15px;
           font-family: "fun";
@@ -169,6 +169,6 @@
       }
       #nav-logo{
           float: right;
-          margin: 5px;
+          margin: 5px 10px 5px 5px;
       }
  }

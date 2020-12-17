@@ -11,8 +11,6 @@
     margin: auto;
     height: 100px;
     border-radius: 0 0 50% 50%;
-    -webkit-box-shadow: 2px 4px 30px -9px #000000; 
-    box-shadow: 2px 4px 30px -9px #000000;
 }
 .category2{
     width: 1024px;
@@ -34,11 +32,10 @@
      width: 1024px;
      background-color: gainsboro;
      margin: auto;
-     margin-bottom: 50px;
-     margin-top: 50px;
+     margin-bottom: 90px;
+     margin-top: 90px;
      border-radius: 5px;
-     -webkit-box-shadow: 2px 4px 30px -9px #000000; 
-     box-shadow: 2px 4px 30px -9px #000000;
+     padding-bottom: 50px;
  }
  #most-discounts h1{
      position: relative;
@@ -75,11 +72,11 @@
      width: 1024px;
      background-color: gainsboro;
      margin: auto;
-     margin-bottom: 50px;
+     margin-bottom: 90px;
      margin-top: 50px;
+     padding-bottom: 40px;
+     padding-top: 40px;
      border-radius: 5px;
-     -webkit-box-shadow: 2px 4px 30px -9px #000000; 
-     box-shadow: 2px 4px 30px -9px #000000;
  }
  #discounts h1{
      position: relative;
@@ -137,14 +134,14 @@
      color: black;
      font-family: 'fun';
  }
- .fa-map-marker{
+ #offers-in-pop .fa-map-marker{
      position: absolute;
      right: 10px;
-     top: 250px;
+     top: 290px;
      color: rgb(0, 140, 255);
      color: rgb(2, 146, 190);
  }
- .list strong{
+ #offers-in-pop .list strong{
      position: absolute;
      right: 25px;
      top: 250px;

@@ -5,9 +5,8 @@
 #containerUser{
     width: 1024px;
     margin: auto;
+    height: 550px;
     margin-top: 10px;
-    -webkit-box-shadow: 2px 5px 30px 8px #000000; 
-    box-shadow: 2px 5px 30px 8px #000000;
 }
 #nameUser{
     color: black;
@@ -110,16 +109,16 @@
         background-color: rgba(0, 0, 0, 0.08);
     box-shadow: 5px 5px 5px lightblue,-5px -5px 5px lightblue;
 }
-.listUser h1{
-    margin:10px 60px;
+#savedDis.listUser h1{
+    margin:20px 60px;
     font-size: 20px;
     text-align: right;
     font-family: 'fun', serif;
 }
 #savedDis ul li .listUser p{
     position: absolute;
-    top: 115px;
-    left: 198px;
+    top: 103px;
+    left: 95px;
     color: crimson;
     font-weight: bold;
     font-size: 18px;

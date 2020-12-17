@@ -12,14 +12,13 @@ block body
                          li
                               div.list
                                    img(src=v.main_pic alt="")
-                                   p#offers-in-pop= v.off
+                                   p#offers-in-pop= `${v.off}%`
                                    h2#mch2= v.name
                                    i(id="mci" class="fa fa-map-marker" aria-hidden="true") 
                                    strong#mcs= v.address
                
      div.clearfix
      div#discounts
-          h1 محبوبترین تخفیفات
           ul
                each v,k in all              
                     li    
@@ -27,7 +26,7 @@ block body
                               div.list
                                    div.list
                                    img(src=v.main_pic alt="")
-                                   p#offers-in-pop= v.off
+                                   p#offers-in-pop= `${v.off}%`
                                    h2#mch2= v.name
                                    i(id="mci" class="fa fa-map-marker" aria-hidden="true") 
                                    strong#mcs= v.address

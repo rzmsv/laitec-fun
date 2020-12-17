@@ -67,7 +67,7 @@ module.exports.sport = async (req,res,next)=>{
         function sport (m,a){
             return new Promise((resolve,reject)=>{
                 // for (i=0;i<m.length;i++)
-                resolve(res.render('sport',{title : 'Sport Page',category :'مجتمع ورزشی',most : m ,all:a,loggedin : loggedIn,signed : signed,name:name}))
+                resolve(res.render('sport',{title : 'Sport Page',category :'مجموعه ورزشی',most : m ,all:a,loggedin : loggedIn,signed : signed,name:name}))
             })
         }
     } catch (error) {
@@ -151,7 +151,7 @@ module.exports.login =(req,res,next)=>{
             console.log(req.session.adminLoggedIn)
             res.render('admin')
         }
-        else{
+        else{ 
             
             res.render('login',{title : 'Login Page'})
         }

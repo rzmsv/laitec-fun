@@ -12,9 +12,9 @@ body{
     margin-left: 85px;
 }
 .login #defLogin{
-    margin: 30px auto;
+    margin: 30px 30px 30px 10px;
     font-size: 30px;
-    color: #f34242;
+    color:#464646;
     text-align: center;
     font-family: "fun";
     font-weight: bold;
@@ -36,10 +36,10 @@ body{
 }
 .login #formLogin #aLogin{
     position: relative;
-    color: #0307dd;
+    color:#1498c0;
     font-size: 20px;
     left: 290px;
-    top: 27px;
+    top: 25px;
     text-decoration: none;
     font-family: "fun";
 }
@@ -50,6 +50,7 @@ body{
     border-radius: 10px;
     background-color: #01BFF3;
     color: white;
+    font-size: 20px;
     width: 570px;
     margin: 50px 0 0 0;
     font-family: "fun";
@@ -57,6 +58,7 @@ body{
 
 @media only screen and (max-width: 425px){
     .containerLogin{
+        padding-top: 50px;
         width: 400px;
         margin: auto;
         height: 476px;
@@ -67,15 +69,14 @@ body{
         margin-left: 0px;
     }
     .login #defLogin{
-        margin: 30px 0 0 -47px;
+        margin: 30px 0 50px -20px;
         font-size: 30px;
-        color: #f34242;
         text-align: center;
         font-family: "fun";
     }
     #formLogin input{
         width: 350px;
-        height: 40px;
+        height: 25px;
         margin: 10px;
         text-align: right;
         padding: 10px;
@@ -90,9 +91,8 @@ body{
     }
     .login #formLogin #aLogin{
         position: relative;
-        color: #0307dd;
         left: 100px;
-        top: 40px;
+        top: 20px;
         text-decoration: none;
         font-family: "fun";
     }
@@ -101,7 +101,7 @@ body{
         background-color: #01BFF3;
         color: white;
         width: 370px;
-        margin: 90px 10px 0 10px;
+        margin: 40px 10px 0 10px;
         font-family: "fun";
     }
 }
