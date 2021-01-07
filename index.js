@@ -67,7 +67,7 @@ app.use(user)
 app.use(login)
 app.use(detail)
 
-app.get('/500',ErrorPage.get500)
+
 app.use(ErrorPage.get404)
 app.use((error,req,res,next)=>{
     res.status(500).render('500',{title : 'Error'})
