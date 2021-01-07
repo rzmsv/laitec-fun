@@ -131,7 +131,7 @@ module.exports.signup =(req,res,next)=>{
                 return await res.render('signup',{title:'SignUp Page',loggedin:loggedIn,signed:signed})
         } catch (error) {
             console.log('ERROR IN 116 - 132 /Signup/or back to db folder')
-            next(new Error (error))
+            next()
         }
     }
     signUp()
@@ -157,7 +157,7 @@ module.exports.login =(req,res,next)=>{
         }
     } catch (error) {
         console.log('ERROR IN 139 - 160 /login/or back to db folder')
-        next(new Error (error))
+        next()
     }
 }
 
@@ -222,7 +222,7 @@ module.exports.detail = (req,res,next)=>{
             var one = await sql.detail(id)
             res.render('detail',{db:one[0],image:one[0].main_pic,loggedin : loggedIn,signed : signed,name:name})
         } catch (error) {
-            next(new Error(error))
+            next()
         }
     }
     detailOne()
